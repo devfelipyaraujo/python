@@ -1,0 +1,20 @@
+
+#Criar venv
+python -m venv venv
+
+#Ativar venv
+.\venv\Scripts\Activate.ps1
+
+#Gerar arquivo de texto com as LIB
+pip freeze > requirements.txt
+
+#Importar arquivo com as LIB
+pip install -r requirements.txt
+
+#cadastro de e-mail do github
+git config --global user.email "devfelipyaraujo@gmail.com"
+
+
+#cadastro de nome de usuario do github
+git config --global user.nem "devfelipyaraujo"
+
