@@ -1,0 +1,45 @@
+from time import sleep
+from datetime import date
+
+nome = str(input('Qual o seu nome? '))
+print(' ')
+sleep(1)
+
+nasc = int(input('Qual o ano do seu nascimento? '))
+print(' ')
+sleep(1)
+
+print('Olá {} aguarde um momento enquanto estamos verificando suas informações...'.format(nome))
+print(' ')
+sleep(2)
+
+ano = date.today().year
+idade = ano - nasc
+al = 18
+ia = idade - al
+ia2 = al - idade
+
+print('Estamos de volta....')
+print(' ')
+sleep(2)
+
+if idade == 18:
+    print('Você possui {} anos de idade, então deve se alistar esse ano.'.format(idade))
+    print(' ')
+
+elif idade > 18 and idade == 19:
+    print('Você possui {} anos de idade. Perdeu o prazo de alistamento. Deveria ter feito isso a {} ano atrás.'.format(idade, ia))
+    print(' ')
+
+elif idade > 19:
+    print('Você possui {} anos de idade. Perdeu o prazo de alistamento. Deveria ter feito isso a {} anos atrás.'.format(idade, ia))
+    print(' ')
+
+elif idade < 18 and idade == 17:
+    print('Você possui {} anos de idade. Está perto do período de alistamento que deverá ser feito daqui a {} ano.'.format(idade, ia2))
+    print(' ')
+
+else:
+    print('Você possui {} anos de idade. Ainda não está na hora de se alistar. Isso deverá ser feito daqui {} anos. '.format(idade, ia2))
+    print(' ')
+
