@@ -1,9 +1,14 @@
 
 
 
-contrato = 'Concorda com todos os termos do contrato?'
-print(input(contrato))
-if contrato == sim:
-    print('teste com')
-else:
-    print('aff')
+import random
+
+lista = [pedra, papel, tesoura]
+
+pedra = 1
+papel = 2
+tesoura = 3
+
+pc = random.choice(lista)
+
+print (pc)

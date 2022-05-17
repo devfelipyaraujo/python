@@ -3,18 +3,20 @@
 #Calcule o valor da prestação mensal sabendo que ela não pode exceder 30% da renda do comprador ou o financiamento será negado
 
 
-v = float(input('Qual o valor da casa? R$ '))
-s = float(input('Qual o valor do seu salário? R$ '))
-a = float(input('Em quantos anos pretende pagar? '))
+v = float(input('Qual o valor da casa? R$ ')) #valor da casa
+s = float(input('Qual o valor do seu salário? R$ ')) #salario do comprador
+a = float(input('Em quantos anos pretende pagar? ')) #tempo de financiamento
 
-t = a *12
-p = v / t
-e = (s*30) /100
+prestação = v / (a *12)
+maximo = (s*30) /100
 
-if e < p:
+if maximo < prestação:
     print('Infelizmente o financiamento foi NEGADO!')
-    print('Pois excede os 30% do valor da sua renda mensal')
+    print('Pois o valor da prestação excede os 30% do valor da sua renda mensal')
+    print(' ')
+
 else:
-    print('a casa será paga em {:.0f} meses'.format(t))
-    print('O valor da prestação será de R$ {:.2f}'.format(p))
+    print('a casa será paga em {:.0f} anos'.format(a))
+    print('O valor da prestação será de R$ {:.2f}'.format(prestação))
+    print(' ')
    

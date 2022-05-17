@@ -13,7 +13,7 @@ cores = {'limpa':'\033[m',
 'ciano':'\033[36m', 
 'cinza':'\033[37m'}
 
-
+print(' ')
 aluno = str(input('Qual é o nome do aluno: '))
 print(' ')
 sleep(1)
@@ -28,23 +28,19 @@ sleep(1)
 
 media = (n1 + n2) / 2
 print(' ')
-sleep(1)
+sleep(2)
 
-print('A média desse aluno foi de {} - Por conta disso...'.format(media))
+print('A média desse aluno foi de {:.2f} - Por conta disso...'.format(media))
 print(' ')
 sleep(1)
 
-if media < 50:
+if media < 5:
     print('O aluno {} está {}REPROVADO{}'.format(aluno, cores['vermelho'], cores['limpa']))
-    print(' ')
-    sleep(1)
-
-elif media == 50 and media < 69:
+    
+elif media > 5 and media < 6.9:
     print('O aluno {} está de {}RECUPERAÇÃO{}'.format(aluno, cores['amarelo'], cores['limpa']))
-    print(' ')
-    sleep(1)
     
 else:
     print('O aluno {} está {}APROVADO!{}'.format(aluno, cores['verde'], cores['limpa']))
-    print(' ')
-    sleep(1)
+    
+print(' ')
