@@ -1,14 +1,3 @@
 
-
-
-import random
-
-lista = [pedra, papel, tesoura]
-
-pedra = 1
-papel = 2
-tesoura = 3
-
-pc = random.choice(lista)
-
-print (pc)
+for c in range(2, 50, 2):
+    print(c)
