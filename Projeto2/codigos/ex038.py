@@ -1,5 +1,5 @@
 #Escreva um programa que leia dois números inteiros e compare-os;
-#Mostre na tela quem é o maios dos dois ou se ambos sãp iguais.
+#Mostre na tela quem é o maior dos dois ou se ambos são iguais.
 
 print ('    ')
 
