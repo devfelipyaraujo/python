@@ -1,9 +1,32 @@
 
 
+from random import randint
+from time import sleep
 
 
-for i in range(1, 5):
-    idade = int(input('Idade: '))
-    print(' ')
+computador = randint(0, 10) #faz o computador "PENSAR"
 
-print('A média de idade do grupo é de {} anos'.format(idade+idade /4))
+print('-=' * 28)
+print('Vou pensar em um número entre 0 e 5. Tente advinhar...')
+print('-=' * 28)
+
+jogador = int(input('Em que número eu pensei? ')) #jogador tenta adivinhar
+
+print('PROCESSANDO...')
+
+sleep(1)
+
+if jogador == computador:
+    print('PARABÉNS! Você conseguiu me vencer!')
+else:
+    while computador != jogador:
+        
+        computador = randint(0, 10) #faz o computador "PENSAR"
+
+        jogador = int(input('Em que número eu pensei? ')) #jogador tenta adivinhar
+
+        if jogador == computador:
+            print('PARABÉNS! Você conseguiu me vencer!')
+        
+        else:
+            print('Não! Tente de novo')
