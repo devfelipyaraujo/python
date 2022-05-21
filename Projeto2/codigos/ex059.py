@@ -4,11 +4,13 @@
 
 opção = None
 
+print(' ')
+n1 = int(input('Digite o primeiro número: '))
+n2 = int(input('Digite o segundo número: '))
+
 while opção != 4:
     
-    print(' ')
-    n1 = int(input('Digite o primeiro número: '))
-    n2 = int(input('Digite o segundo número: '))
+    
 
     print(' ')
     print('''O QUE QUER FAZER? \n
@@ -25,22 +27,31 @@ while opção != 4:
     if opção == 0:
         print('A soma dos valores {} e {} resulta em {}'.format(n1, n2, n1 + n2))
 
-    if opção == 1:
+    elif opção == 1:
         print('A multiplicação dos valores {} e {} resulta em {}'.format(n1, n2, n1 * n2))
 
-    if opção == 2:
+    elif opção == 2:
 
         if n1 > n2:
-            print('O primeiro valor {} é o maior'.format(n1))
+            print('Entre {} e {} o primeiro valor {} é o maior'.format(n1, n2, n1))
 
         elif n1 < n2:
-            print('O segundo valor {} é o maior'.format(n2))
+            print('Entre {} e {} o segundo valor {} é o maior'.format(n1, n2, n2))
         
         else:
             print('Os valores informados são iguais')
     
-    if opção == 3:
+    elif opção == 3:
         print('OK, vamos recomeçar!')
+        print(' ')
+        n1 = int(input('Digite o primeiro número: '))
+        n2 = int(input('Digite o segundo número: '))
+    
+    elif opção == 4:
+        print('Finalizando....')
+    
+    else:
+        print('Opção Inválida. Tente de novo.')
     
 print(' ')
 print('FIM')

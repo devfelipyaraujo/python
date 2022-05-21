@@ -1,35 +1,27 @@
 
 
-from random import randint
-from time import sleep
 
-tent = 0
-computador = randint(0, 10) #faz o computador "PENSAR"
 
-print('-=' * 28)
-print('Vou pensar em um número entre 0 e 5. Tente advinhar...')
-print('-=' * 28)
 
-jogador = int(input('Em que número eu pensei? ')) #jogador tenta adivinhar
 
-print('PROCESSANDO...')
 
-sleep(1)
 
-if jogador == computador:
-    print('PARABÉNS! Você conseguiu me vencer!')
-else:
-    while computador != jogador:
-        
-        computador = randint(0, 10) #faz o computador "PENSAR"
 
-        jogador = int(input('Em que número eu pensei? ')) #jogador tenta adivinhar
+num = 0
+soma = 0
+cont = 0
 
-        if jogador == computador:
-            print('PARABÉNS! Você conseguiu me vencer!')
-        
-        else:
-            tent += 1
-            print('Não! Tente de novo')
+while num != 999:
+    
+    num = int(input('Digite um número: '))
 
-print('Foram {} tentativas'.format(tent))
+    if num == 999:
+        print('Você escolheu sair...')
+
+    cont +=1
+
+    soma += num
+
+print(' ')
+
+print('Voce informou {} números e a soma foi {}'.format(cont, soma - 999))

@@ -4,20 +4,24 @@
 
 s = ''
 
-
 while s != 'M' and s != 'F':
 
-    s = str(input('Informe o Sexo: ')).upper()
+    print(' ')
+
+    s = str(input('Informe o Sexo: ')).upper().strip()
     
     if s == 'F':
+        print(' ')
         print('Entendi! Você é do sexo Feminino	')
         f = 'Feminino'
         
     elif s == 'M':
+        print(' ')
         print('Entendi! Você é do sexo Masculino')
         m = 'Masculino'
 
     else:
          print('Não entendi! Por favor, responda novamente.')
-
+         
+print(' ')
 print('FIM')

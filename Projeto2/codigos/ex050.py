@@ -1,5 +1,5 @@
 #Escreva um algoritmo que leia seis números interiros;
-#Mostre a soma apenas daqueles que forem pasres;
+#Mostre a soma apenas daqueles que forem pares;
 #Se o valor digitado for ímpar desconsidere-o.
 
 soma = 0

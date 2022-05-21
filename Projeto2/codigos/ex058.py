@@ -6,10 +6,11 @@ from random import randint
 from time import sleep
 
 tent = 0
-computador = randint(0, 10)
+computador = -1
 jogador = None
 
 print(' ')
+
 while computador != jogador:
     
     computador = randint(0, 10) #faz o computador "PENSAR"
