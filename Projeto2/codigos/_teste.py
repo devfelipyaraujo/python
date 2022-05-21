@@ -3,7 +3,7 @@
 from random import randint
 from time import sleep
 
-
+tent = 0
 computador = randint(0, 10) #faz o computador "PENSAR"
 
 print('-=' * 28)
@@ -29,4 +29,7 @@ else:
             print('PARABÉNS! Você conseguiu me vencer!')
         
         else:
+            tent += 1
             print('Não! Tente de novo')
+
+print('Foram {} tentativas'.format(tent))
