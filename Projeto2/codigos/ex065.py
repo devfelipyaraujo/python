@@ -9,9 +9,9 @@ cont = 0
 maior = 0
 menor = 0
 media = 0
-r = ''
+r = 'S'
 
-while r != 'N':
+while r in 'Ss':
 
     print(' ')
 
@@ -24,7 +24,6 @@ while r != 'N':
 
     if cont == 1:
         maior == menor == num
-
     else:
         if num > maior:
             maior = num   

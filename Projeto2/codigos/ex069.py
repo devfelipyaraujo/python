@@ -6,7 +6,7 @@ contsexo = 0
 contmidade = 0
 
 while not pare:
-    
+        
     print(10 * '-=' )
     print('CADASTRE UMA PESSOA')
     print(10 * '-=' )
