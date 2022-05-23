@@ -10,7 +10,7 @@ cont = 0
 
 while num != 999:
     
-    num = int(input('Digite um número: '))
+    num = int(input('Digite um número: [999 PAR ENCERRAR O PROGRAMA] '))
 
     cont +=1
 
@@ -22,13 +22,9 @@ while num != 999:
         
         print(' ')
         print('Você escolheu sair...')
-
     
-
 print(' ')
 
-
 print('Voce informou {} números e a soma foi {}'.format(cont, soma))
-
 
 print(' ')

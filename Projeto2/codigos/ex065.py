@@ -1,16 +1,15 @@
-
-
-
-
+#Crie um programa que leia vários números inteiros pelo teclado;
+#No final da execução, mostre a média entre todos os valores e qual foi o maior e o menor valores lidos;
+#O programa deve perguntar ao usuário se ele quer ou não continuar a digitar valores.
 
 print(' ')
 
-num = 0
 soma = 0
 cont = 0
 maior = 0
 menor = 0
-r = '[S/N]'
+media = 0
+r = ''
 
 while r != 'N':
 
@@ -20,20 +19,23 @@ while r != 'N':
 
     print(' ')
 
-    r = str(input('Quer continuar? ')).upper()
-
+    soma += num
     cont +=1
 
-    soma += num
+    if cont == 1:
+        maior == menor == num
 
-    if num > maior:
-            maior = num
-        
-    if num < menor:
+    else:
+        if num > maior:
+            maior = num   
+        if num < menor:
             menor = num
 
+    r = str(input('Quer continuar? ')).upper().strip()[0]    
+
+media = soma / cont        
 print(' ')
-print('voce digitou {} numeros e a média entre eles é {:.1f}'.format(cont, soma/cont))
+print('voce digitou {} numeros e a média entre eles é {:.1f}'.format(cont, media))
 print(' ')
 print('O maior é número é {} e o menor é {}'.format(maior, menor))
 print(' ')
