@@ -1,3 +1,7 @@
+#Crie um programa que leia números inteiros pelo teclado;
+#O programa só vai parar quando o usuário digitar o valor 999;
+#Mostre quantos números foram digitados e qual foi a soma entre elas (desconsiderando o flag).
+
 
 print('')
 print('-' * 17, '\n [999 PARA SAIR]')
