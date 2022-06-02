@@ -8,10 +8,11 @@ print(' ')
 
 
 cont = 0 #Conta quantos produtos foram comprados
+contm = 0
 soma = 0 #Soma o valor total gasto
 valorprod = 0 #Calcula os produtos acima de 1000 reais
 menor = 0 #Produto mais barato
-barato = 0 #Nome do produto mai barato
+barato = '' #Nome do produto mai barato
 
 while True:
 
@@ -19,15 +20,11 @@ while True:
     vprod = float(input('Insira o valor do produto: R$ '))
     print(' ')
 
-    resp = ' '
-    while resp not in 'SN':
-        resp = str(input('Quer continuar? [S/N] ')).upper().strip()[0]
-    print(' ')
-
     cont +=1
+    contm +=1
     soma += vprod
 
-    if cont ==1:
+    if contm == 1:
         menor = vprod
     
     else:
@@ -37,6 +34,11 @@ while True:
 
     if vprod > 1000:
         valorprod += 1
+    
+    resp = ' '
+    while resp not in 'SN':
+        resp = str(input('Quer continuar? [S/N] ')).upper().strip()[0]
+    print(' ')
         
     if resp == 'N':
         print('Finalizando Programa....')
@@ -50,4 +52,4 @@ while True:
 print(f'Foram comprados {cont} produtos')
 print(f'Ao todo {valorprod} produtos custaram mais de R$ 1.000,00 cada')
 print(f'O total gasto na compra foi de R$ {soma:.2f}')
-print(f'O produto mais brato foi {barato} que custa {menor}')
+print(f'O produto mais brato foi {barato} que custa {menor:.2f}')

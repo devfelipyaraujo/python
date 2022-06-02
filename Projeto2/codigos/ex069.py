@@ -39,9 +39,26 @@ while True:
         print('Obrigado!')
         break
 
-print(' ')    
-print(f'Temos {cont} Pessoas cadastradas')
-print(f'Temos {contidade} Pessoas maiores de idade')
-print(f'Temos {contsexo} Homens cadastrados')
-print(f'Temos {contmidade} Mulheres com menos de 20 anos.')
+print(' ')
+
+if cont < 2:
+    print(f'Temos {cont} Pessoa cadastrada')
+else:
+    print(f'Temos {cont} Pessoas cadastradas')
+
+if contidade < 2:
+    print(f'Temos {contidade} Pessoa maior de idade')
+else:
+    print(f'Temos {contidade} Pessoas maiores de idade')
+
+if contsexo < 2:
+    print(f'Temos {contsexo} Homem cadastrado')
+else:
+    print(f'Temos {contsexo} Homens cadastrados')
+
+if contmidade < 18:
+    print(f'Temos {contmidade} Mulher com menos de 20 anos.')
+else:
+    print(f'Temos {contmidade} Mulheres com menos de 20 anos.')
+
 print(' ')   
