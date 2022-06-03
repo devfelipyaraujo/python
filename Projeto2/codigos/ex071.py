@@ -41,4 +41,4 @@ while True:
 print(' ')
 print('=' * 30)
 print('{:^30}'.format('VOLTE SEMPRE AO SPECTER BANK'))
-print('=' * 30)
+print('=-' * 30)
