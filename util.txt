@@ -16,5 +16,5 @@ git config --global user.email "user e-mail"
 
 
 #cadastro de nome de usuario do github
-git config --global user.name "user name"
+git config --global user.name "user names"
 

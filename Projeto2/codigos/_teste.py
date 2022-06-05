@@ -1,3 +1,3 @@
-for c in range(0, 10, 3):
+for c in range(0, 11, 3):
     print (c)
 
