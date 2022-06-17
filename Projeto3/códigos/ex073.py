@@ -1,0 +1,15 @@
+times = ('Flamengo', 'Vasco', 'Atletico MG', 'Palmeiras', 'Chapecoense', 'Real Madrid', 'Liverpool', 'PSG', 'City', 'Bayern')
+
+print (' ')
+print (f'O 5 primeiros colocados são: {times[0:5]}')
+print (' ')
+print (f'Os times da zona de rebaixamento são {times[6:]}')
+print (' ')
+print (f'Os times em ordem alfabética são: {sorted(times)}')
+print (' ')
+print (f'Os times da zona de rebaixamento são {times[6:]}')
+print (' ')
+print (f'O time de chapecó está na {times.index("Chapecoense")+1}ª colocação')
+print (' ')
+
+#print (times [0:5])
