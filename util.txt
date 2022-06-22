@@ -11,8 +11,8 @@ pip freeze > requirements.txt
 pip install -r requirements.txt
 
 #cadastro de e-mail do github
-git config --global user.email "user e-mail"
+git config --global user.email "ti@oncoradium.com.br"
 
 
 #cadastro de nome de usuario do github
-git config --global user.name "user names"
+git config --global user.name "redeonco"
