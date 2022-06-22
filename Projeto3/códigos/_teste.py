@@ -28,6 +28,5 @@ while True:
         break
 
 
-    #print('Tente Novamente! ')
 
 #print(f'Você digitou o número {cont [num]}')
